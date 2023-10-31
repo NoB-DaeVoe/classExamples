@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classCode</title>
+</head>
+<body>
+    <!-- Can write style in index.html file -->
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center; 
+        }
+        button {
+            border: none;
+            border-radius: 100px;
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            color: white; 
+        }
+    </style>
+
+    <script> console.log("Hello world")</script>
+
+    <!-- Can link script files into index.html file -->
+    <script src="script.js"></script>
+
+    <h1>Hello</h1>
+    <p><b>Here is my console programming webbsite!</b></p>
+    <p>Open the inspector with: ctrl+shift+i and open the console.</p> <br>
+
+    <!-- Onclick calls 2 functions -->
+    <button onclick="buttonClick(); counter();"><b>Click me</b></button>
+
+    <p><b>Click Counter:</b></p>
+    <p id="clickCounter"></p>
+</body>
+</html>
