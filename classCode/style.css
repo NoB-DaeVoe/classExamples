@@ -3,4 +3,25 @@ body {
     background-color: aquamarine;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center; 
+    margin: 0 auto;
+}
+
+#menuTab {
+    border: solid 2px azure;
+    background-color: azure;
+    text-align: left;
+}
+
+.menu {
+    display: inline;
+    margin: 0 10px;
+}
+
+#current {
+    text-decoration: underline;
+}
+
+div ul li a {
+    text-decoration: none;
+    color: black;
 }

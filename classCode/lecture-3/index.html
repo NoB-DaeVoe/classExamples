@@ -12,8 +12,17 @@
 </head>
 
 <body>
-    <h1>Lecture 3</h1>
-    <p><b>Here is my console programming webbsite!</b></p>
+    <div id="menuTab">
+        <ul>
+            <li class="menu" style="padding-right: 20px; text-decoration: underline;">Frontend-Programming 2023</li>
+            <li class="menu" style="padding-right: 30px; text-decoration: underline;">Lectures:</li>
+            <li class="menu"><a href="../lecture-2/index.html">Lecture 2</a></li>
+            <li class="menu" id="current"><a href="../lecture-3/index.html">Lecture 3</a></li>
+        </ul>
+    </div>
+
+    <h1 style="text-decoration: underline;">Lecture 3</h1>
+    <p><b style="text-decoration: underline;">Here is my console programming webbsite!</b></p>
     <p>Open the inspector with: ctrl+shift+i and open the console.</p> <br>
 
     <style>
@@ -28,10 +37,11 @@
     </style>
 
     <p>
+        <b>Name Prompt & Placeholder:</b><br><br>
         <input type="button" class="button" value="Prompt and Alert" onclick="testAlertAndPrompt()">
     </p>
 
-    <p>
+    <p><br>
         <input type="text" id="name" placeholder="Write your name:">
         <input type="button" value="OK" onclick="buttonClick()">
         <div id="hello-output">...</div>
