@@ -26,18 +26,18 @@ function buttonClick() {
 
 // Click counter
 let clicks = 0;
-function counter() {  
+function counter() {
     clicks += 1;
     document.getElementById("clickCounter").innerHTML = clicks;
-    if ( clicks >= 100 ) {
+    if (clicks >= 100) {
         console.log("I see you like clicking");
     }
 
-    if ( clicks >= 500 ) {
+    if (clicks >= 500) {
         console.log("You really like clicking don't you?");
     }
 
-    if ( clicks >= 1000 ) {
+    if (clicks >= 1000) {
         console.log("Stop it, get some help.");
     }
 }
