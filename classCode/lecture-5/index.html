@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecture 4</title>
+    <title>Lecture 5</title>
     <link rel="stylesheet" href="../style.css">
-    <script src="lecture-4.js" defer></script>
+    <script src="lecture-5.js" defer></script>
 </head>
 
 <body>
@@ -16,34 +17,32 @@
             <li class="menu"><a href="../lecture-1/index.html">Lecture 1</a></li>
             <li class="menu"><a href="../lecture-2/index.html">Lecture 2</a></li>
             <li class="menu"><a href="../lecture-3/index.html">Lecture 3</a></li>
-            <li class="menu" id="current"><a href="../lecture-4/index.html">Lecture 4</a></li>
-            <li class="menu"><a href="../lecture-5/index.html">Lecture 5</a></li>
+            <li class="menu"><a href="../lecture-4/index.html">Lecture 4</a></li>
+            <li class="menu" id="current"><a href="../lecture-5/index.html">Lecture 5</a></li>
         </ul>
     </div>
 
-    <h1 style="text-decoration: underline;">Lecture 4</h1>
+    <h1 style="text-decoration: underline;">Lecture 5</h1>
     <p><b style="text-decoration: underline;">Here is my console programming webbsite!</b></p>
     <p>Open the inspector with: ctrl+shift+i and open the console.</p><br>
 
-    <h2 id="title">Lecture 4</h2>
+    <h3>Our products:</h3>
+    <table border="1">
+        <tr>
+            <th>Product Number</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+        <tbody id="products-list"></tbody>
+    </table>
 
-    <p>
-        <a id="arcada-link" href="https://arcada.fi" data-city="Helsinki">Arcada</a>
-    </p>
+    <h2>Date & Time:</h2>
+    <p id="today"></p>
 
-    <ul id="list">
-        <li>One</li>
-        <li>Two</li>
-    </ul>
-
-    <ul id="colors"></ul>
-
-    <p>
-        Lorem <span class="important">ipsum</span> dolor sit 
-        amet consectetur adipisicing elit. 
-        <span class="important">Inventore</span> quam vel optio ut sequi eaque dignissimos culpa sapiente porro nisi ab amet molestiae animi aperiam, iure hic error, magnam earum?
-    </p>
-
-    <ul id="important-words"></ul>
+    <h2>Egg Timer:</h2>
+    <button onclick="oneMinute()">1 Minute</button>
+    <p id="timer">...</p>
 </body>
+
 </html>
