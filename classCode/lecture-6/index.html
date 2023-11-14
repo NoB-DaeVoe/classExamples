@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 6</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="lecture-6.js" defer></script>
+    <style>
+        #h {
+            cursor: pointer;
+        }
+
+        .clickable {
+            color: navy;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menuTab">
+        <ul>
+            <li class="menu" style="padding-right: 20px; text-decoration: underline;">Frontend-Programming 2023</li>
+            <li class="menu" style="padding-right: 30px; text-decoration: underline;">Lectures:</li>
+            <li class="menu"><a href="../lecture-1/index.html">Lecture 1</a></li>
+            <li class="menu"><a href="../lecture-2/index.html">Lecture 2</a></li>
+            <li class="menu"><a href="../lecture-3/index.html">Lecture 3</a></li>
+            <li class="menu"><a href="../lecture-4/index.html">Lecture 4</a></li>
+            <li class="menu"><a href="../lecture-5/index.html">Lecture 5</a></li>
+            <li class="menu" id="current"><a href="../lecture-6/index.html">Lecture 6</a></li>
+        </ul>
+    </div>
+
+    <h1 style="text-decoration: underline;">Lecture 6</h1>
+    <p><b style="text-decoration: underline;">Here is my console programming webbsite!</b></p>
+    <p>Open the inspector with: ctrl+shift+i and open the console.</p><br>
+
+    <h2 id="h">Don't click me</h2><br>
+    <button type="button" id="btn">Click me</button>
+    <br>
+    <br>
+
+    <p><b>Click these:</b></p>
+    <div class="clickable">One</div>
+    <div class="clickable">Two</div>
+    <div class="clickable">Three</div><br>
+
+    <ul id="list">
+        <li>first</li>
+        <li>secound</li>
+        <li>third</li>
+    </ul><br>
+
+    <p>
+        <select id="dropdown">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="lime">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+        <span id="dropdown-output">Sample text</span>
+    </p>
+
+    <p>Choose a number: <input id="nummer" type="number"></p>
+
+    <p>Choose a date: <input id="datum" type="date"></p>
+
+    <p>
+        <input id="slider" type="range" min="0" max="100" step="1">
+        <span id="slider-out"></span>
+    </p>
+
+    <p>
+        <textarea id="long-text" style="height: 20px;"></textarea>
+    <div id="text-out"></div>
+    </p>
+
+    <p>
+        <input id="check" type="checkbox"> I agree to all!
+    <div id="check-output">You have to agree to everything!</div>
+    </p>
+</body>
+
+</html>
