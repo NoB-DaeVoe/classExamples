@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 7</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #thumbnails img {
+            cursor: pointer;
+            max-height: 100px;
+        }
+
+        #lightbox {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+    <script src="lecture-7.js" defer></script>
+</head>
+
+<body>
+    <div id="menuTab">
+        <ul>
+            <li class="menu" style="padding-right: 20px; text-decoration: underline;">Frontend-Programming 2023</li>
+            <li class="menu" style="padding-right: 30px; text-decoration: underline;">Lectures:</li>
+            <li class="menu"><a href="../lecture-1/index.html">Lecture 1</a></li>
+            <li class="menu"><a href="../lecture-2/index.html">Lecture 2</a></li>
+            <li class="menu"><a href="../lecture-3/index.html">Lecture 3</a></li>
+            <li class="menu"><a href="../lecture-4/index.html">Lecture 4</a></li>
+            <li class="menu"><a href="../lecture-5/index.html">Lecture 5</a></li>
+            <li class="menu"><a href="../lecture-6/index.html">Lecture 6</a></li>
+            <li class="menu" id="current"><a href="../lecture-7/index.html">Lecture 7</a></li>
+        </ul>
+    </div>
+
+    <h1 style="text-decoration: underline;">Lecture 7</h1>
+    <p><b style="text-decoration: underline;">Here is my console programming webbsite!</b></p>
+    <p>Open the inspector with: ctrl+shift+i and open the console.</p><br>
+
+    What is your name? <input id="name" type="text">
+    <input type="button" value="OK" onclick="saveName()">
+    <p id="greeting"></p>
+
+    <div id="thumbnails">
+        <img src="img/Cat-1.jpg" data-fullsize="img/Cat-1.jpg">
+        <img src="img/Cat-2.jpg" data-fullsize="img/Cat-2.jpg">
+        <img src="img/Cat-3.jpg" data-fullsize="img/Cat-3.jpg">
+    </div>
+
+    <div id="lightbox"><img src="img/Funny.gif"></div>
+
+</body>
+
+</html>
