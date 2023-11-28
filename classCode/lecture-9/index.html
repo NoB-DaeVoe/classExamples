@@ -4,9 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecture 5</title>
+    <title>Lecture 9</title>
     <link rel="stylesheet" href="../style.css">
-    <script src="lecture-5.js" defer></script>
+    <script src="lecture-9.js" defer></script>
+
+    <style>
+        nav span {
+            color: blue;
+            cursor: pointer;
+        }
+        footer {
+            color: grey;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,35 +28,27 @@
             <li class="menu"><a href="../lecture-2/index.html">Lecture 2</a></li>
             <li class="menu"><a href="../lecture-3/index.html">Lecture 3</a></li>
             <li class="menu"><a href="../lecture-4/index.html">Lecture 4</a></li>
-            <li class="menu" id="current"><a href="../lecture-5/index.html">Lecture 5</a></li>
+            <li class="menu"><a href="../lecture-5/index.html">Lecture 5</a></li>
             <li class="menu"><a href="../lecture-6/index.html">Lecture 6</a></li>
             <li class="menu"><a href="../lecture-7/index.html">Lecture 7</a></li>
             <li class="menu"><a href="../lecture-8/index.html">Lecture 8</a></li>
-            <li class="menu"><a href="../lecture-9/index.html">Lecture 9</a></li>
+            <li class="menu" id="current"><a href="../lecture-9/index.html">Lecture 9</a></li>
         </ul>
     </div>
 
-    <h1 style="text-decoration: underline;">Lecture 5</h1>
+    <h1 style="text-decoration: underline;">Lecture 9</h1>
     <p><b style="text-decoration: underline;">Here is my console programming webbsite!</b></p>
     <p>Open the inspector with: ctrl+shift+i and open the console.</p><br>
 
-    <h3>Our products:</h3>
-    <table border="1">
-        <tr>
-            <th>Product Number</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Stock</th>
-        </tr>
-        <tbody id="products-list"></tbody>
-    </table>
+    <nav>
+        <span data-page="mainpage">Mainpage</span> |
+        <span data-page="about">About Us</span> |
+        <span data-page="contact">Contact Us</span>
+    </nav>
 
-    <h2>Date & Time:</h2>
-    <p id="today"></p>
+    <article></article>
 
-    <h2>Egg Timer:</h2>
-    <button onclick="oneMinute()">1 Minute</button>
-    <p id="timer">...</p>
+    <footer><p><b>-- powered by vanillaJS --</b></p></footer>
 </body>
 
 </html>
